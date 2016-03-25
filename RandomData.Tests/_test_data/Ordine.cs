@@ -6,10 +6,11 @@ namespace RandomData.Tests
     public class Ordine
     {
         public int id { get; set; }
-        public int stato { get; set; }
+        public float stato { get; set; }
         public string note { get; set; }
-        public int idUtente { get; set; }
-        public int destinatarioID { get; set; } 
+        public long idUtente { get; set; }
+        public double destinatarioID { get; set; } 
+        public decimal destinatarioID1 { get; set; } 
         public UtenteRubrica utente { get; set; }
         public int idHotel { get; set; }
         public DateTime ultimaModifica { get; set; }

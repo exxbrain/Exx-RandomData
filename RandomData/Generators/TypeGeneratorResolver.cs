@@ -8,9 +8,16 @@ namespace RandomData
     {
         public TypeGeneratorResolver ()
         {
+            var intGenerator = new IntGenerator();
+            var floatGenerator = new FloatGenerator();
+
             _dict = new Dictionary<Type, IValueGenerator>()
             {
-                { typeof(int), new IntGenerator() },
+                { typeof(int), intGenerator },
+                { typeof(float), floatGenerator },
+                { typeof(double), floatGenerator },
+                { typeof(decimal), new DecimalGenerator() },
+                { typeof(long), intGenerator },
                 { typeof(string), new StringGenerator() },
                 { typeof(DateTime), new DateGenerator() },
             };

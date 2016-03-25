@@ -39,6 +39,8 @@
     <Compile Include="Generators\Data.cs" />
     <Compile Include="Generators\DateGenerator.cs" />
     <Compile Include="Generators\InstanceGenerator.cs" />
+    <Compile Include="Generators\FloatGenerator.cs" />
+    <Compile Include="Generators\DecimalGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
