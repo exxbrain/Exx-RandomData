@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Exx-RandomData</id>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <title>Random Data</title>
     <authors>Denis Zakharov (exxbrain)</authors>
     <owners>Denis Zakharov (exxbrain)</owners>
@@ -11,7 +11,7 @@
     	Random Data PCL allows you to create instances of objects populated by random data. 
     	It is useful for developing UI. You can do it in your Xamarin projects.
     </description>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Ability to ignore properties added</releaseNotes>
     <copyright>Copyright Denis Zakharov (exxbrain) 2016</copyright>
     <tags>Xamarin Prototyping UI Xamarin.Forms Random Data</tags>
   </metadata>
