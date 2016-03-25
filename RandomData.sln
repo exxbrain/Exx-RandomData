@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomData", "RandomData\RandomData.csproj", "{F760FC3A-003A-428A-9FCF-C51782C45446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomData.Tests", "RandomData.Tests\RandomData.Tests.csproj", "{FA4E43AF-E7E8-489A-9249-F449727489A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F760FC3A-003A-428A-9FCF-C51782C45446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F760FC3A-003A-428A-9FCF-C51782C45446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F760FC3A-003A-428A-9FCF-C51782C45446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F760FC3A-003A-428A-9FCF-C51782C45446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4E43AF-E7E8-489A-9249-F449727489A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4E43AF-E7E8-489A-9249-F449727489A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4E43AF-E7E8-489A-9249-F449727489A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4E43AF-E7E8-489A-9249-F449727489A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
