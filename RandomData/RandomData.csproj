@@ -44,4 +44,7 @@
   <ItemGroup>
     <Folder Include="Generators\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="RandomData.nuspec" />
+  </ItemGroup>
 </Project>
