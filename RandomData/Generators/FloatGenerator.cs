@@ -2,7 +2,7 @@
 
 namespace RandomData
 {
-    public class FloatGenerator : IValueGenerator
+    internal class FloatGenerator : IValueGenerator
     {
         private Random _rand = new Random();
 

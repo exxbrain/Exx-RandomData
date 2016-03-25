@@ -32,7 +32,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomDataGenerator.cs" />
-    <Compile Include="Generators\TypeGeneratorResolver.cs" />
     <Compile Include="Generators\IntGenerator.cs" />
     <Compile Include="Generators\IValueGenerator.cs" />
     <Compile Include="Generators\StringGenerator.cs" />
@@ -41,6 +40,7 @@
     <Compile Include="Generators\InstanceGenerator.cs" />
     <Compile Include="Generators\FloatGenerator.cs" />
     <Compile Include="Generators\DecimalGenerator.cs" />
+    <Compile Include="ValueUpdater.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>

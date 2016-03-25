@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace RandomData
 {
-    public class DecimalGenerator : IValueGenerator
+    internal class DecimalGenerator : IValueGenerator
 	{
         private Random _rand = new Random();
 

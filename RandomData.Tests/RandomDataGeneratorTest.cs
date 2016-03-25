@@ -37,6 +37,21 @@ namespace RandomData.Tests
         }
 
         [Test]
+        public void Ignore_PropertyReference_IntPropertyIsZero()
+        {
+            //Arrange
+            var generator = new RandomDataGenerator<Ordine>();
+
+            //Act
+            generator.Ignore(o => o.id);
+            var obj = generator.Generate();
+
+            //Assert
+            Assert.That(obj.id, Is.EqualTo(0));
+
+        }
+
+        [Test]
         public void Generate_CreatesObjectWithRandomilyPopulatedFields()
         {
             //Arrange
@@ -60,8 +75,6 @@ namespace RandomData.Tests
             Assert.That(res.utente.eta, Is.GreaterThan(0));
             Assert.That(res.utente.frase, Is.Not.Null);
             Assert.That(res.utente.id, Is.GreaterThan(0));
-
-
         }
     }
 }

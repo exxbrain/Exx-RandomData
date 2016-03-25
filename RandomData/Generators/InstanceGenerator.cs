@@ -6,13 +6,12 @@ namespace RandomData
 {
     internal class InstanceGenerator : IValueGenerator
 	{
-        private readonly TypeGeneratorResolver _typeGeneratorResolver 
-            = new TypeGeneratorResolver();
-
         private readonly Type _type;
+        private readonly ValueUpdater _updater;
 
-        public InstanceGenerator (Type type)
+        public InstanceGenerator (Type type, ValueUpdater factory)
         {
+            this._updater = factory;
             this._type = type;
         }
 
@@ -24,10 +23,7 @@ namespace RandomData
             var typeInfo = this._type.GetTypeInfo();
             foreach (var prop in typeInfo.DeclaredProperties)
             {
-                var generator = this._typeGeneratorResolver
-                    .GetGenerator(prop.PropertyType);
-                if (generator != null)
-                    prop.SetValue(instance, generator.GetValue());
+                this._updater.UpdateValue(instance, prop);
             }
             return instance;
         }
